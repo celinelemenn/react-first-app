@@ -3,8 +3,34 @@ body {
 }
 
 #root {
-  height: 100vh;
+  // height: 100vh;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.app-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+}
+
+.left {
+  //flex-grow, flex-shrink, and flex-basis
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+}
+
+.search {
+  margin-bottom: 40px;
+  width: 30vw;
+
+}
+
+.right {
+  flex: 0 0 40%;
 }
