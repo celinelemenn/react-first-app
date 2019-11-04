@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 
 class Search extends Component {
   handleInput = (event) => {
-    return event.target.value;
+    this.props.searchFunction(event.target.value);
   };
 
   render(props) {
     return (
-      <input type="text" className="search" onChange={this.handleInput} />
+      <input type="text" className="form-search" onChange={this.handleInput} />
     );
   }
 }
